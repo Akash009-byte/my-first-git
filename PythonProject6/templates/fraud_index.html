@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detector</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; max-width: 400px; }
+        h1 { color: #d93025; margin-bottom: 10px; }
+        p { color: #5f6368; margin-bottom: 25px; }
+        input { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #dadce0; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
+        button { background-color: #1a73e8; color: white; border: none; padding: 12px 30px; border-radius: 8px; font-size: 16px; cursor: pointer; transition: background 0.3s; }
+        button:hover { background-color: #1557b0; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Fraud Shield</h1>
+        <p>Real-Time Transaction Analysis</p>
+        <form action="/check_transaction" method="POST">
+            <label for="features" style="display:block; text-align:left; margin-bottom:8px; font-weight:bold;">Transaction Features:</label>
+            <input type="text" id="features" name="features" placeholder="e.g. 10.5, 0.2, 0.1, 5.0, 20.0" required>
+            <button type="submit">Verify Security</button>
+        </form>
+    </div>
+</body>
+</html>
